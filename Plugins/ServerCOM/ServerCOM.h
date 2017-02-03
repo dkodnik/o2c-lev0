@@ -1,19 +1,27 @@
+
+
 /* this ALWAYS GENERATED file contains the definitions for the interfaces */
 
 
-/* File created by MIDL compiler version 5.01.0164 */
-/* at Sun Oct 31 20:56:39 2010
+ /* File created by MIDL compiler version 6.00.0361 */
+/* at Fri Feb 03 22:06:46 2017
  */
-/* Compiler settings for D:\myProject\GPL 2c\2c\level0\PLUGINS\ServerCOM\ServerCOM.idl:
-    Oicf (OptLev=i2), W1, Zp8, env=Win32, ms_ext, c_ext
+/* Compiler settings for .\ServerCOM.idl:
+    Oicf, W1, Zp8, env=Win32 (32b run)
+    protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
+    VC __declspec() decoration level: 
+         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
+         DECLSPEC_UUID(), MIDL_INTERFACE()
 */
 //@@MIDL_FILE_HEADING(  )
+
+#pragma warning( disable: 4049 )  /* more than 64k source lines */
 
 
 /* verify that the <rpcndr.h> version is high enough to compile this file*/
 #ifndef __REQUIRED_RPCNDR_H_VERSION__
-#define __REQUIRED_RPCNDR_H_VERSION__ 440
+#define __REQUIRED_RPCNDR_H_VERSION__ 475
 #endif
 
 #include "rpc.h"
@@ -31,9 +39,9 @@
 #ifndef __ServerCOM_h__
 #define __ServerCOM_h__
 
-#ifdef __cplusplus
-extern "C"{
-#endif 
+#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#pragma once
+#endif
 
 /* Forward Declarations */ 
 
@@ -59,8 +67,12 @@ typedef struct Connect Connect;
 #include "oaidl.h"
 #include "ocidl.h"
 
-void __RPC_FAR * __RPC_USER MIDL_user_allocate(size_t);
-void __RPC_USER MIDL_user_free( void __RPC_FAR * ); 
+#ifdef __cplusplus
+extern "C"{
+#endif 
+
+void * __RPC_USER MIDL_user_allocate(size_t);
+void __RPC_USER MIDL_user_free( void * ); 
 
 #ifndef __IConnect_INTERFACE_DEFINED__
 #define __IConnect_INTERFACE_DEFINED__
@@ -102,31 +114,31 @@ EXTERN_C const IID IID_IConnect;
         
         virtual /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE EvalExpr2( 
             /* [in] */ BSTR Str,
-            /* [retval][out] */ VARIANT __RPC_FAR *Ret) = 0;
+            /* [retval][out] */ VARIANT *Ret) = 0;
         
         virtual /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE get_Test8( 
-            /* [retval][out] */ BSTR __RPC_FAR *__RPC_FAR *pVal) = 0;
+            /* [retval][out] */ BSTR **pVal) = 0;
         
         virtual /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE put_Test8( 
-            /* [in] */ BSTR __RPC_FAR *newVal) = 0;
+            /* [in] */ BSTR *newVal) = 0;
         
         virtual /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE get_Test9( 
-            /* [retval][out] */ BSTR __RPC_FAR *pVal) = 0;
+            /* [retval][out] */ BSTR *pVal) = 0;
         
         virtual /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE put_Test9( 
             /* [in] */ BSTR newVal) = 0;
         
         virtual /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE get_Test10( 
-            /* [retval][out] */ VARIANT __RPC_FAR *pVal) = 0;
+            /* [retval][out] */ VARIANT *pVal) = 0;
         
         virtual /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE put_Test10( 
             /* [in] */ VARIANT newVal) = 0;
         
         virtual /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE get_Test11( 
-            /* [retval][out] */ VARIANT __RPC_FAR *__RPC_FAR *pVal) = 0;
+            /* [retval][out] */ VARIANT **pVal) = 0;
         
         virtual /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE get_Array( 
-            /* [retval][out] */ VARIANT __RPC_FAR *pVal) = 0;
+            /* [retval][out] */ VARIANT *pVal) = 0;
         
         virtual /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE put_Array( 
             /* [in] */ VARIANT newVal) = 0;
@@ -139,116 +151,116 @@ EXTERN_C const IID IID_IConnect;
     {
         BEGIN_INTERFACE
         
-        HRESULT ( STDMETHODCALLTYPE __RPC_FAR *QueryInterface )( 
-            IConnect __RPC_FAR * This,
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            IConnect * This,
             /* [in] */ REFIID riid,
-            /* [iid_is][out] */ void __RPC_FAR *__RPC_FAR *ppvObject);
+            /* [iid_is][out] */ void **ppvObject);
         
-        ULONG ( STDMETHODCALLTYPE __RPC_FAR *AddRef )( 
-            IConnect __RPC_FAR * This);
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            IConnect * This);
         
-        ULONG ( STDMETHODCALLTYPE __RPC_FAR *Release )( 
-            IConnect __RPC_FAR * This);
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            IConnect * This);
         
-        HRESULT ( STDMETHODCALLTYPE __RPC_FAR *GetTypeInfoCount )( 
-            IConnect __RPC_FAR * This,
-            /* [out] */ UINT __RPC_FAR *pctinfo);
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfoCount )( 
+            IConnect * This,
+            /* [out] */ UINT *pctinfo);
         
-        HRESULT ( STDMETHODCALLTYPE __RPC_FAR *GetTypeInfo )( 
-            IConnect __RPC_FAR * This,
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfo )( 
+            IConnect * This,
             /* [in] */ UINT iTInfo,
             /* [in] */ LCID lcid,
-            /* [out] */ ITypeInfo __RPC_FAR *__RPC_FAR *ppTInfo);
+            /* [out] */ ITypeInfo **ppTInfo);
         
-        HRESULT ( STDMETHODCALLTYPE __RPC_FAR *GetIDsOfNames )( 
-            IConnect __RPC_FAR * This,
+        HRESULT ( STDMETHODCALLTYPE *GetIDsOfNames )( 
+            IConnect * This,
             /* [in] */ REFIID riid,
-            /* [size_is][in] */ LPOLESTR __RPC_FAR *rgszNames,
+            /* [size_is][in] */ LPOLESTR *rgszNames,
             /* [in] */ UINT cNames,
             /* [in] */ LCID lcid,
-            /* [size_is][out] */ DISPID __RPC_FAR *rgDispId);
+            /* [size_is][out] */ DISPID *rgDispId);
         
-        /* [local] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Invoke )( 
-            IConnect __RPC_FAR * This,
+        /* [local] */ HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            IConnect * This,
             /* [in] */ DISPID dispIdMember,
             /* [in] */ REFIID riid,
             /* [in] */ LCID lcid,
             /* [in] */ WORD wFlags,
-            /* [out][in] */ DISPPARAMS __RPC_FAR *pDispParams,
-            /* [out] */ VARIANT __RPC_FAR *pVarResult,
-            /* [out] */ EXCEPINFO __RPC_FAR *pExcepInfo,
-            /* [out] */ UINT __RPC_FAR *puArgErr);
+            /* [out][in] */ DISPPARAMS *pDispParams,
+            /* [out] */ VARIANT *pVarResult,
+            /* [out] */ EXCEPINFO *pExcepInfo,
+            /* [out] */ UINT *puArgErr);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Test )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *Test )( 
+            IConnect * This,
             int a);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Test2 )( 
-            IConnect __RPC_FAR * This);
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *Test2 )( 
+            IConnect * This);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Test3 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *Test3 )( 
+            IConnect * This,
             VARIANT A);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Test4 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Test4 )( 
+            IConnect * This,
             /* [in] */ BSTR newVal);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Test5 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Test5 )( 
+            IConnect * This,
             BSTR A,
             /* [in] */ BSTR newVal);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Test6 )( 
-            IConnect __RPC_FAR * This);
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *Test6 )( 
+            IConnect * This);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *Test7 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *Test7 )( 
+            IConnect * This,
             BSTR A);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *EvalExpr )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *EvalExpr )( 
+            IConnect * This,
             BSTR Str);
         
-        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *EvalExpr2 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id] */ HRESULT ( STDMETHODCALLTYPE *EvalExpr2 )( 
+            IConnect * This,
             /* [in] */ BSTR Str,
-            /* [retval][out] */ VARIANT __RPC_FAR *Ret);
+            /* [retval][out] */ VARIANT *Ret);
         
-        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *get_Test8 )( 
-            IConnect __RPC_FAR * This,
-            /* [retval][out] */ BSTR __RPC_FAR *__RPC_FAR *pVal);
+        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Test8 )( 
+            IConnect * This,
+            /* [retval][out] */ BSTR **pVal);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Test8 )( 
-            IConnect __RPC_FAR * This,
-            /* [in] */ BSTR __RPC_FAR *newVal);
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Test8 )( 
+            IConnect * This,
+            /* [in] */ BSTR *newVal);
         
-        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *get_Test9 )( 
-            IConnect __RPC_FAR * This,
-            /* [retval][out] */ BSTR __RPC_FAR *pVal);
+        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Test9 )( 
+            IConnect * This,
+            /* [retval][out] */ BSTR *pVal);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Test9 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Test9 )( 
+            IConnect * This,
             /* [in] */ BSTR newVal);
         
-        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *get_Test10 )( 
-            IConnect __RPC_FAR * This,
-            /* [retval][out] */ VARIANT __RPC_FAR *pVal);
+        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Test10 )( 
+            IConnect * This,
+            /* [retval][out] */ VARIANT *pVal);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Test10 )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Test10 )( 
+            IConnect * This,
             /* [in] */ VARIANT newVal);
         
-        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *get_Test11 )( 
-            IConnect __RPC_FAR * This,
-            /* [retval][out] */ VARIANT __RPC_FAR *__RPC_FAR *pVal);
+        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Test11 )( 
+            IConnect * This,
+            /* [retval][out] */ VARIANT **pVal);
         
-        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *get_Array )( 
-            IConnect __RPC_FAR * This,
-            /* [retval][out] */ VARIANT __RPC_FAR *pVal);
+        /* [helpstring][id][propget] */ HRESULT ( STDMETHODCALLTYPE *get_Array )( 
+            IConnect * This,
+            /* [retval][out] */ VARIANT *pVal);
         
-        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE __RPC_FAR *put_Array )( 
-            IConnect __RPC_FAR * This,
+        /* [helpstring][id][propput] */ HRESULT ( STDMETHODCALLTYPE *put_Array )( 
+            IConnect * This,
             /* [in] */ VARIANT newVal);
         
         END_INTERFACE
@@ -256,7 +268,7 @@ EXTERN_C const IID IID_IConnect;
 
     interface IConnect
     {
-        CONST_VTBL struct IConnectVtbl __RPC_FAR *lpVtbl;
+        CONST_VTBL struct IConnectVtbl *lpVtbl;
     };
 
     
@@ -349,7 +361,7 @@ EXTERN_C const IID IID_IConnect;
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_Test_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     int a);
 
 
@@ -361,7 +373,7 @@ void __RPC_STUB IConnect_Test_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_Test2_Proxy( 
-    IConnect __RPC_FAR * This);
+    IConnect * This);
 
 
 void __RPC_STUB IConnect_Test2_Stub(
@@ -372,7 +384,7 @@ void __RPC_STUB IConnect_Test2_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_Test3_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     VARIANT A);
 
 
@@ -384,7 +396,7 @@ void __RPC_STUB IConnect_Test3_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Test4_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     /* [in] */ BSTR newVal);
 
 
@@ -396,7 +408,7 @@ void __RPC_STUB IConnect_put_Test4_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Test5_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     BSTR A,
     /* [in] */ BSTR newVal);
 
@@ -409,7 +421,7 @@ void __RPC_STUB IConnect_put_Test5_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_Test6_Proxy( 
-    IConnect __RPC_FAR * This);
+    IConnect * This);
 
 
 void __RPC_STUB IConnect_Test6_Stub(
@@ -420,7 +432,7 @@ void __RPC_STUB IConnect_Test6_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_Test7_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     BSTR A);
 
 
@@ -432,7 +444,7 @@ void __RPC_STUB IConnect_Test7_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_EvalExpr_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     BSTR Str);
 
 
@@ -444,9 +456,9 @@ void __RPC_STUB IConnect_EvalExpr_Stub(
 
 
 /* [helpstring][id] */ HRESULT STDMETHODCALLTYPE IConnect_EvalExpr2_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     /* [in] */ BSTR Str,
-    /* [retval][out] */ VARIANT __RPC_FAR *Ret);
+    /* [retval][out] */ VARIANT *Ret);
 
 
 void __RPC_STUB IConnect_EvalExpr2_Stub(
@@ -457,8 +469,8 @@ void __RPC_STUB IConnect_EvalExpr2_Stub(
 
 
 /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE IConnect_get_Test8_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [retval][out] */ BSTR __RPC_FAR *__RPC_FAR *pVal);
+    IConnect * This,
+    /* [retval][out] */ BSTR **pVal);
 
 
 void __RPC_STUB IConnect_get_Test8_Stub(
@@ -469,8 +481,8 @@ void __RPC_STUB IConnect_get_Test8_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Test8_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [in] */ BSTR __RPC_FAR *newVal);
+    IConnect * This,
+    /* [in] */ BSTR *newVal);
 
 
 void __RPC_STUB IConnect_put_Test8_Stub(
@@ -481,8 +493,8 @@ void __RPC_STUB IConnect_put_Test8_Stub(
 
 
 /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE IConnect_get_Test9_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [retval][out] */ BSTR __RPC_FAR *pVal);
+    IConnect * This,
+    /* [retval][out] */ BSTR *pVal);
 
 
 void __RPC_STUB IConnect_get_Test9_Stub(
@@ -493,7 +505,7 @@ void __RPC_STUB IConnect_get_Test9_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Test9_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     /* [in] */ BSTR newVal);
 
 
@@ -505,8 +517,8 @@ void __RPC_STUB IConnect_put_Test9_Stub(
 
 
 /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE IConnect_get_Test10_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [retval][out] */ VARIANT __RPC_FAR *pVal);
+    IConnect * This,
+    /* [retval][out] */ VARIANT *pVal);
 
 
 void __RPC_STUB IConnect_get_Test10_Stub(
@@ -517,7 +529,7 @@ void __RPC_STUB IConnect_get_Test10_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Test10_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     /* [in] */ VARIANT newVal);
 
 
@@ -529,8 +541,8 @@ void __RPC_STUB IConnect_put_Test10_Stub(
 
 
 /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE IConnect_get_Test11_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [retval][out] */ VARIANT __RPC_FAR *__RPC_FAR *pVal);
+    IConnect * This,
+    /* [retval][out] */ VARIANT **pVal);
 
 
 void __RPC_STUB IConnect_get_Test11_Stub(
@@ -541,8 +553,8 @@ void __RPC_STUB IConnect_get_Test11_Stub(
 
 
 /* [helpstring][id][propget] */ HRESULT STDMETHODCALLTYPE IConnect_get_Array_Proxy( 
-    IConnect __RPC_FAR * This,
-    /* [retval][out] */ VARIANT __RPC_FAR *pVal);
+    IConnect * This,
+    /* [retval][out] */ VARIANT *pVal);
 
 
 void __RPC_STUB IConnect_get_Array_Stub(
@@ -553,7 +565,7 @@ void __RPC_STUB IConnect_get_Array_Stub(
 
 
 /* [helpstring][id][propput] */ HRESULT STDMETHODCALLTYPE IConnect_put_Array_Proxy( 
-    IConnect __RPC_FAR * This,
+    IConnect * This,
     /* [in] */ VARIANT newVal);
 
 
@@ -589,15 +601,15 @@ Connect;
 
 /* Additional Prototypes for ALL interfaces */
 
-unsigned long             __RPC_USER  BSTR_UserSize(     unsigned long __RPC_FAR *, unsigned long            , BSTR __RPC_FAR * ); 
-unsigned char __RPC_FAR * __RPC_USER  BSTR_UserMarshal(  unsigned long __RPC_FAR *, unsigned char __RPC_FAR *, BSTR __RPC_FAR * ); 
-unsigned char __RPC_FAR * __RPC_USER  BSTR_UserUnmarshal(unsigned long __RPC_FAR *, unsigned char __RPC_FAR *, BSTR __RPC_FAR * ); 
-void                      __RPC_USER  BSTR_UserFree(     unsigned long __RPC_FAR *, BSTR __RPC_FAR * ); 
+unsigned long             __RPC_USER  BSTR_UserSize(     unsigned long *, unsigned long            , BSTR * ); 
+unsigned char * __RPC_USER  BSTR_UserMarshal(  unsigned long *, unsigned char *, BSTR * ); 
+unsigned char * __RPC_USER  BSTR_UserUnmarshal(unsigned long *, unsigned char *, BSTR * ); 
+void                      __RPC_USER  BSTR_UserFree(     unsigned long *, BSTR * ); 
 
-unsigned long             __RPC_USER  VARIANT_UserSize(     unsigned long __RPC_FAR *, unsigned long            , VARIANT __RPC_FAR * ); 
-unsigned char __RPC_FAR * __RPC_USER  VARIANT_UserMarshal(  unsigned long __RPC_FAR *, unsigned char __RPC_FAR *, VARIANT __RPC_FAR * ); 
-unsigned char __RPC_FAR * __RPC_USER  VARIANT_UserUnmarshal(unsigned long __RPC_FAR *, unsigned char __RPC_FAR *, VARIANT __RPC_FAR * ); 
-void                      __RPC_USER  VARIANT_UserFree(     unsigned long __RPC_FAR *, VARIANT __RPC_FAR * ); 
+unsigned long             __RPC_USER  VARIANT_UserSize(     unsigned long *, unsigned long            , VARIANT * ); 
+unsigned char * __RPC_USER  VARIANT_UserMarshal(  unsigned long *, unsigned char *, VARIANT * ); 
+unsigned char * __RPC_USER  VARIANT_UserUnmarshal(unsigned long *, unsigned char *, VARIANT * ); 
+void                      __RPC_USER  VARIANT_UserFree(     unsigned long *, VARIANT * ); 
 
 /* end of Additional Prototypes */
 
@@ -606,3 +618,5 @@ void                      __RPC_USER  VARIANT_UserFree(     unsigned long __RPC_
 #endif
 
 #endif
+
+

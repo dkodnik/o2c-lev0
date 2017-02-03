@@ -307,7 +307,7 @@ BOOL CMyDataExchange::OnCopyData(CWnd* pWnd, COPYDATASTRUCT* pCopyDataStruct)
 }
 
 
-int CMyDataExchange::OnMessageFrom2C(WPARAM wParam, LPARAM lParam)
+LRESULT CMyDataExchange::OnMessageFrom2C(WPARAM wParam, LPARAM lParam)//dlb
 {
 	switch(wParam) 
 	{

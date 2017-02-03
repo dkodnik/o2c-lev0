@@ -220,7 +220,7 @@ BOOL CMyClientSimple::Receive(CValue &rez,CValue**ppV)
 	if(nLength>0)
 	{
 		f.SeekToBegin();
-		f.ReadHuge(Str.GetBuffer(nLength),nLength);
+		f.Read(Str.GetBuffer(nLength),nLength);//dlb 'ReadHuge'
 		Str.ReleaseBuffer();
 	}
 

@@ -757,7 +757,9 @@ CString		CDBField::AsString()	const
 			return	CString( m_boolVal ? "T" : "F" );
 
 	case	DBVT_UCHAR:
-			return	CString( m_chVal );
+			//return	CString( m_chVal ); //dlb
+			cValue.Format( "%d", m_chVal );
+			return	cValue;
 
 	case	DBVT_SHORT:
 			cValue.Format( "%hd", m_iVal );

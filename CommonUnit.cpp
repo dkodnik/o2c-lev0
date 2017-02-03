@@ -973,14 +973,14 @@ void CFormUnit::OnButton2(UINT nID,int nMessage)
 	}
 }
 
-int CFormUnit::CallDefButton(WPARAM , LPARAM )
+LRESULT CFormUnit::CallDefButton(WPARAM , LPARAM )
 {
 	if(pDefButton)
 		OnButton(pDefButton->GetDlgCtrlID(),BN_CLICKED);
 	return 1;
 }
 
-int CFormUnit::CanDestroy(WPARAM , LPARAM )
+LRESULT CFormUnit::CanDestroy(WPARAM , LPARAM )
 {
 	IsCanDestroy();
 	return 1;
@@ -1033,7 +1033,7 @@ int CFormUnit::IsCanDestroy()
 	return nReturnStatus;
 }
 
-int CFormUnit::CloseForm(WPARAM wParam, LPARAM lParam)
+LRESULT CFormUnit::CloseForm(WPARAM wParam, LPARAM lParam)
 {
 	nModeCloseWindow=2; 
 
@@ -1638,7 +1638,7 @@ BOOL CFormUnit::PreCreateWindow(CREATESTRUCT& cs)
 	return 1;
 }
 
-int CFormUnit::RefreshExpr(WPARAM wParam, LPARAM lParam)
+LRESULT CFormUnit::RefreshExpr(WPARAM wParam, LPARAM lParam)
 {
 	//делаем invalidate, элементы у которых есть св-во NM_CUSTOMDRAW ("Формула надписи")
 	for(int n=0;n<aControlList.GetSize();n++)

@@ -55,8 +55,8 @@ public:
 	CArray <CString,CString> listStrUndo;
 	int nCurPosUndo;
 
-	void EndSelectMode(WPARAM wParam, LPARAM lParam);
-	void MessageShowProperty(WPARAM wParam, LPARAM lParam);
+	LRESULT EndSelectMode(WPARAM wParam, LPARAM lParam); //dlb
+	LRESULT MessageShowProperty(WPARAM wParam, LPARAM lParam); //dlb
 
 // Attributes
 public:

@@ -8255,7 +8255,7 @@ CValue CGridCtrl::GetContext()
 }
 
 
-int CGridCtrl::OnWMEditCell(WPARAM wParam, LPARAM lParam)
+LRESULT CGridCtrl::OnWMEditCell(WPARAM wParam, LPARAM lParam)
 {
 	int nRow=(int)wParam;
 	int nCol=(int)lParam;

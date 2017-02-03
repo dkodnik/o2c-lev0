@@ -76,6 +76,7 @@ bool FileExist(CString sFileName);
 
 
 //Глобальные переменные программы
+MSG m_msgCur;                   // current message dlb
 CString m_csConfigPath;//путь к файлу конфигурации
 CModuleManager m_RunModuleManager;//выполняемая среда
 int nReturnStatus=1;//Статус возврата

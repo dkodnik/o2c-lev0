@@ -143,6 +143,7 @@ void CValue::Copy(const CValue& cOld)
 CValue::operator = (__int64 Val)
 {
 	SetValue(CValue(Val));
+	return *this;//dlb
 }
 CValue::operator = (CValue &Val)
 {
@@ -150,12 +151,12 @@ CValue::operator = (CValue &Val)
 	if(nType&&bReadOnly)
 	{
 		SetValue(Val);
-		//return *this;
+		return *this;//dlb
 	}
 	else
 	{
 		Copy(Val);
-		//return *this;
+		return *this;//dlb
 	}
 }
 

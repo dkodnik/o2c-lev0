@@ -368,8 +368,10 @@ void CValueArray::Sort(CValue cvSort, int nDirect)
 	{
 		csIdString=GetIdentifierByNumber(nKey1-1);
 		Val=GetAt(csIdString);
-		aValues.SetAt(CString(nKey1),Val);
-		aIds.SetAt(CString(nKey1),CValue(csIdString));
+		aValues.SetAt(nKey1,Val);
+		aIds.SetAt(nKey1,CValue(csIdString));
+		/*aValues.SetAt(CString(nKey1),Val);
+		aIds.SetAt(CString(nKey1),CValue(csIdString));*///dlb
 		CElementSort data;
 		data.Value=Val;
 		data.vSort=Val;
@@ -421,8 +423,8 @@ void CValueArray::SortId(CValue cvSort,int nDirect)
 	{
 		csIdString=GetIdentifierByNumber(nKey1-1);
 		Val=CValue(csIdString);
-		aValues.SetAt(CString(nKey1),GetAt(csIdString));
-		aIds.SetAt(CString(nKey1),CValue(csIdString));
+		aValues.SetAt(nKey1,GetAt(csIdString));//aValues.SetAt(CString(nKey1),GetAt(csIdString));
+		aIds.SetAt(nKey1,CValue(csIdString));//aIds.SetAt(CString(nKey1),CValue(csIdString));//dlb
 		CElementSort data;
 		data.Value=Val;
 		data.vSort=Val;

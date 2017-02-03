@@ -96,7 +96,7 @@ public:
 // Operations
 public:
 
-	int RefreshExpr(WPARAM wParam=0, LPARAM lParam=0);
+	LRESULT RefreshExpr(WPARAM wParam=0, LPARAM lParam=0);//dlb
 
 	CValue MakeChoice(CValue Val);//ВыполнитьВыбор
 
@@ -121,9 +121,9 @@ public:
 	int IsCanDestroy();
 
 
-	afx_msg int CloseForm(WPARAM wParam=0, LPARAM lParam=0);
-	afx_msg int CanDestroy(WPARAM wParam=0, LPARAM lParam=0);
-	afx_msg int CallDefButton(WPARAM a=0, LPARAM b=0);
+	afx_msg LRESULT CloseForm(WPARAM wParam=0, LPARAM lParam=0);//dlb
+	afx_msg LRESULT CanDestroy(WPARAM wParam=0, LPARAM lParam=0);//dlb
+	afx_msg LRESULT CallDefButton(WPARAM a=0, LPARAM b=0);//dlb
 
 
 	void GetNameValueList();
@@ -172,8 +172,9 @@ public:
 
 
 	//макросы для обслуживания специальных сообщений
+	/*afx_msg void OnMessage##x( WPARAM wParam, LPARAM lParam, LRESULT* pResult)\//dlb*/
 	#define MessageGrid(x)\
-	afx_msg void OnMessage##x( WPARAM wParam, LPARAM lParam, LRESULT* pResult)\
+	afx_msg void OnMessage##x( UINT wParam, NMHDR* pNMHDR, LRESULT* pResult)\
 	{\
 		int _nReturnStatus=nReturnStatus;\
 		nReturnStatus=1;\
@@ -182,13 +183,14 @@ public:
 			*pResult=-1;\
 		nReturnStatus=_nReturnStatus;\
 	};
-	#define Message3(x) afx_msg void OnMessage##x( WPARAM wParam, LPARAM lParam, LRESULT* pResult){OnButton(wParam,x);*pResult = 0;};
-
+	
+	#define Message_3(x) afx_msg void OnMessage##x( WPARAM wParam, LPARAM lParam, LRESULT* pResult){OnButton(wParam,x);*pResult = 0;};
+	#define Message3(x) afx_msg void OnMessage##x( UINT wParam, NMHDR* pNMHDR, LRESULT* pResult){OnButton(wParam,x);pResult = 0;};
+	
 
 	//ВЫЗОВ МАКРОСОВ 
 
-
-	Message2(TVN_SELCHANGED)//Tree
+	//Message2(TVN_SELCHANGED)//Tree
 
 	Message1(BN_CLICKED)
 	Message1(EN_CHANGE)
@@ -199,7 +201,7 @@ public:
 
 	Message3(NM_CLICK)
 	Message3(NM_DBLCLK)
-	Message3(TVN_SELCHANGED)
+	Message3(TVN_SELCHANGED) //CFormUnit::OnMessageTVN_SELCHANGED
 	Message3(TVN_ITEMEXPANDED)
 	Message3(NM_RCLICK)
 

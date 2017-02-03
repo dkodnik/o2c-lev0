@@ -985,7 +985,7 @@ void CFormDialog::OnLButtonUp(UINT nFlags, CPoint point)
 	CDIALOG::OnLButtonUp(nFlags, point);
 }
 
-void CFormDialog::EndSelectMode(WPARAM wParam, LPARAM lParam)
+LRESULT CFormDialog::EndSelectMode(WPARAM wParam, LPARAM lParam)
 {
 	if(m_pTracker)
 	{
@@ -998,11 +998,12 @@ void CFormDialog::EndSelectMode(WPARAM wParam, LPARAM lParam)
 	}
 
 	ReloadWindows();
+	return 1;//dlb
 }
-void CFormDialog::OnAddControl(WPARAM wParam, LPARAM lParam)
+LRESULT CFormDialog::OnAddControl(WPARAM wParam, LPARAM lParam)
 {
 	if(bReadOnly)
-		return;
+		return 1;//dlb return;
 
 	nCurrentMode=0;
 	if(wParam==ID_BUTTONFORMOBJECT)
@@ -1011,6 +1012,7 @@ void CFormDialog::OnAddControl(WPARAM wParam, LPARAM lParam)
 
 	}
 	nCurrentMode=wParam;
+	return 1;//dlb
 }
 
 void CFormDialog::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags) 

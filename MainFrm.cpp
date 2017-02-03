@@ -229,6 +229,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	UINT nMainToolBarID=IDR_MAINFRAME;
 	if(nCurAppRunMode==CONFIG_MODE)
 	{
+		// Конфигуратор
 		SetTitle("2С:Конфигуратор");
 		nMainToolBarID=IDR_CONFIGTOOLBAR;
 	}

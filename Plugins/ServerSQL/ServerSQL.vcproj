@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding = "windows-1251"?>
+<?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.00"
+	Version="7.10"
 	Name="ServerSQL"
 	SccProjectName=""
 	SccLocalPath=""
@@ -11,6 +11,74 @@
 			Name="Win32"/>
 	</Platforms>
 	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\../../../_build/ServerSQLRelease"
+			IntermediateDirectory=".\../../../_build/ServerSQLRelease"
+			ConfigurationType="2"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;SERVERSQL_EXPORTS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\../../../_build/ServerSQLRelease/ServerSQL.pch"
+				AssemblerListingLocation=".\../../../_build/ServerSQLRelease/"
+				ObjectFile=".\../../../_build/ServerSQLRelease/"
+				ProgramDataBaseFileName=".\../../../_build/ServerSQLRelease/"
+				BrowseInformation="1"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../_build/bin/ServerSQL.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				GenerateMapFile="TRUE"
+				MapFileName=".\../../../_build/ServerSQLRelease/ServerSQL.map"
+				ImportLibrary=".\../../../_build/ServerSQLRelease/ServerSQL.lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\../../../_build/ServerSQLRelease/ServerSQL.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="copy   sqlitedll\sqlite.dll   ..\..\..\_build\bin\
+copy   ..\..\MySQL\lib\libmySQL.dll   ..\..\..\_build\bin\
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1049"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory=".\../../../ServerSQLDebug"
@@ -39,20 +107,21 @@
 				Name="VCCustomBuildTool"/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalOptions="/MACHINE:I386"
 				OutputFile="c:\2c\ServerSQLD.dll"
-				LinkIncremental="2"
+				LinkIncremental="1"
 				SuppressStartupBanner="TRUE"
 				GenerateDebugInformation="TRUE"
 				ProgramDatabaseFile=".\../../../ServerSQLDebug/ServerSQLD.pdb"
-				ImportLibrary=".\../../../ServerSQLDebug/ServerSQLD.lib"/>
+				ImportLibrary=".\../../../ServerSQLDebug/ServerSQLD.lib"
+				TargetMachine="1"/>
 			<Tool
 				Name="VCMIDLTool"
 				PreprocessorDefinitions="_DEBUG"
 				MkTypLibCompatible="TRUE"
 				SuppressStartupBanner="TRUE"
 				TargetEnvironment="1"
-				TypeLibraryName=".\../../../ServerSQLDebug/ServerSQL.tlb"/>
+				TypeLibraryName=".\../../../ServerSQLDebug/ServerSQL.tlb"
+				HeaderFileName=""/>
 			<Tool
 				Name="VCPostBuildEventTool"/>
 			<Tool
@@ -61,103 +130,109 @@
 				Name="VCPreLinkEventTool"/>
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_AFXDLL;_DEBUG"
+				PreprocessorDefinitions="_DEBUG"
 				Culture="1049"/>
 			<Tool
 				Name="VCWebServiceProxyGeneratorTool"/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
-		</Configuration>
-		<Configuration
-			Name="Release|Win32"
-			OutputDirectory=".\../../_build/ServerSQLRelease"
-			IntermediateDirectory=".\../../_build/ServerSQLRelease"
-			ConfigurationType="2"
-			UseOfMFC="2"
-			ATLMinimizesCRunTimeLibraryUsage="FALSE"
-			CharacterSet="2">
-			<Tool
-				Name="VCCLCompilerTool"
-				InlineFunctionExpansion="1"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;SERVERSQL_EXPORTS"
-				StringPooling="TRUE"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="TRUE"
-				UsePrecompiledHeader="3"
-				PrecompiledHeaderThrough="stdafx.h"
-				PrecompiledHeaderFile=".\../../_build/ServerSQLRelease/ServerSQL.pch"
-				AssemblerListingLocation=".\../../_build/ServerSQLRelease/"
-				ObjectFile=".\../../_build/ServerSQLRelease/"
-				ProgramDataBaseFileName=".\../../_build/ServerSQLRelease/"
-				BrowseInformation="1"
-				WarningLevel="3"
-				SuppressStartupBanner="TRUE"/>
-			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				AdditionalOptions="/MACHINE:I386"
-				OutputFile="../../_build/bin/ServerSQL.dll"
-				LinkIncremental="1"
-				SuppressStartupBanner="TRUE"
-				GenerateMapFile="TRUE"
-				MapFileName=".\../../_build/ServerSQLRelease/ServerSQL.map"
-				ImportLibrary=".\../../_build/ServerSQLRelease/ServerSQL.lib"/>
-			<Tool
-				Name="VCMIDLTool"
-				PreprocessorDefinitions="NDEBUG"
-				MkTypLibCompatible="TRUE"
-				SuppressStartupBanner="TRUE"
-				TargetEnvironment="1"
-				TypeLibraryName=".\../../_build/ServerSQLRelease/ServerSQL.tlb"/>
-			<Tool
-				Name="VCPostBuildEventTool"
-				CommandLine="copy  sqlitedll\sqlite.dll  ..\..\_build\bin\
-copy  ..\..\MySQL\lib\libmySQL.dll  ..\..\_build\bin\
-"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_AFXDLL;NDEBUG"
-				Culture="1049"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCXMLDataGeneratorTool"/>
 			<Tool
 				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
 		</Configuration>
 	</Configurations>
+	<References>
+	</References>
 	<Files>
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
 			<File
 				RelativePath="..\..\Compiler\OutToDebug.cpp">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						PreprocessorDefinitions=""
+						BrowseInformation="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"
+						BrowseInformation="1"/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath="..\..\Compiler\OutToDebug.h">
 			</File>
 			<File
-				RelativePath=".\SQLLite.cpp">
-			</File>
-			<File
-				RelativePath=".\ServerSQL.cpp">
-			</File>
-			<File
-				RelativePath=".\StdAfx.cpp">
-				<FileConfiguration
-					Name="Debug|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
-				</FileConfiguration>
+				RelativePath="ServerSQL.cpp">
 				<FileConfiguration
 					Name="Release|Win32">
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						Optimization="2"
+						PreprocessorDefinitions=""
+						BrowseInformation="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"
+						BrowseInformation="1"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="SQLLite.cpp">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						PreprocessorDefinitions=""
+						BrowseInformation="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"
+						BrowseInformation="1"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="StdAfx.cpp">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						PreprocessorDefinitions=""
+						UsePrecompiledHeader="1"
+						BrowseInformation="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"
+						UsePrecompiledHeader="1"
+						BrowseInformation="1"/>
 				</FileConfiguration>
 			</File>
 		</Filter>
@@ -165,13 +240,13 @@ copy  ..\..\MySQL\lib\libmySQL.dll  ..\..\_build\bin\
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl">
 			<File
-				RelativePath=".\SQLLite.h">
-			</File>
-			<File
-				RelativePath=".\StdAfx.h">
-			</File>
-			<File
 				RelativePath="..\Compiler\plugdetect.h">
+			</File>
+			<File
+				RelativePath="SQLLite.h">
+			</File>
+			<File
+				RelativePath="StdAfx.h">
 			</File>
 		</Filter>
 		<Filter
@@ -179,13 +254,13 @@ copy  ..\..\MySQL\lib\libmySQL.dll  ..\..\_build\bin\
 			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
 		</Filter>
 		<File
-			RelativePath="..\..\_build\bin\Enterprise.lib">
+			RelativePath="..\..\..\_build\bin\Enterprise.lib">
 		</File>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath="ReadMe.txt">
 		</File>
 		<File
-			RelativePath=".\sqlitedll\sqlite.lib">
+			RelativePath="sqlitedll\sqlite.lib">
 		</File>
 	</Files>
 	<Globals>

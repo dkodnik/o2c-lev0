@@ -90,10 +90,10 @@ public:
 	void AutoSetDlgItem();
 	void BringToFront(int nMode=1);
 	CWnd* FindCurrentWindow(CPoint point);
-	void EndSelectMode(WPARAM wParam, LPARAM lParam);
+	LRESULT EndSelectMode(WPARAM wParam, LPARAM lParam);//dlb
 	void SelectItem(CWnd* pWnd,int nMode);//0-Remove+Add+Move,1-Add+Remove,2-Add
 
-	void OnAddControl(WPARAM wParam, LPARAM lParam);
+	LRESULT OnAddControl(WPARAM wParam, LPARAM lParam);//dlb
 	void MoveSelectedWindows(int dx=0,int dy=0,int bResize=0);
 	void UseGrid(CRect *pRect);
 	CDynControl* GetCurrenElement();

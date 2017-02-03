@@ -1006,7 +1006,8 @@ CString GetIDName(CString csStr)
 	int nLastSpace=-1;
 	for(int i=1;i<csStr.GetLength();i++)
 	{
-		int nChar=csStr.GetAt(i);
+		//int nChar=csStr.GetAt(i);//dlb
+		CString nChar=csStr.GetAt(i);
 		if(nChar==' ')//пробел
 		{
 			nLastSpace=i;

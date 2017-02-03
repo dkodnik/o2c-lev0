@@ -19,22 +19,29 @@ public:
 	{
 		ASSERT_VALID(this);
 
+		UINT nbHash; //dlb:+
 		UINT nHash;
 		CAssoc* pAssoc;
-		if ((pAssoc = GetAssocAt(key, nHash)) == NULL)
+		if ((pAssoc = GetAssocAt(key, nbHash, nHash)) == NULL)
 		{
 			bFind=0;
 			if (m_pHashTable == NULL)
 				InitHashTable(m_nHashTableSize);
 
 			// it doesn't exist, add a new Association
+			
+			#if _MSC_VER < 1300
 			pAssoc = NewAssoc();
 			pAssoc->nHashValue = nHash;
 			pAssoc->key = key;
+			
 			// 'pAssoc->value' is a constructed object, nothing more
 
 			// put into hash table
 			pAssoc->pNext = m_pHashTable[nHash];
+			#else
+			pAssoc = NewAssoc(key);//dlb +
+			#endif
 			m_pHashTable[nHash] = pAssoc;
 		}
 		else

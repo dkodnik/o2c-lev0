@@ -49,7 +49,7 @@ public:
 	void OnGridBeginPaste(NMHDR *pNotifyStruct, LRESULT*  pResult);
 	void OnGridEndPaste(NMHDR *pNotifyStruct, LRESULT* pResult);
 
-	afx_msg int OnPropertyUpdateMessage(WPARAM, LPARAM);
+	afx_msg LRESULT OnPropertyUpdateMessage(WPARAM, LPARAM);//dlb int
 
 // Implementation
 public:

@@ -354,7 +354,7 @@ void CViewManager::OnRButtonDown(UINT nFlags, CPoint point)
 	CCBaseControlBar::OnRButtonDown(nFlags, point);
 }
 
-BOOL CViewManager::OnViewManagerToolTip(NMHDR* pNMHDR, LRESULT* pResult)
+void CViewManager::OnViewManagerToolTip(NMHDR* pNMHDR, LRESULT* pResult)
 {
     *pResult = 0;
     TCHITTESTINFO hti;
@@ -370,7 +370,7 @@ BOOL CViewManager::OnViewManagerToolTip(NMHDR* pNMHDR, LRESULT* pResult)
 		{
             pTTT->lpszText = MAKEINTRESOURCE(nID);
             pTTT->hinst    = AfxGetResourceHandle();            
-			return TRUE;
+			return;//dlb return TRUE;
         }    
 	} 
 
@@ -392,9 +392,9 @@ BOOL CViewManager::OnViewManagerToolTip(NMHDR* pNMHDR, LRESULT* pResult)
 			strTabText = ID_DEFDOCTIPS;
 
 		lstrcpy(pTTT->lpszText, strTabText);
-		return TRUE;
+		return;//dlb return TRUE;
 	}
-	return FALSE;
+	//dlb return FALSE;
 }
 
 BOOL CViewManager::CreateViewManager(CMDIFrameWnd *pMDIFrameWnd, UINT uID)

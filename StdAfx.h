@@ -147,9 +147,6 @@ CString FindErrorCodeLine(CString &Buffer,int nCurPos,int nOnlyCodeLine);
 class CByteCode *AfxGetCurrentByteCode();
 void DoError();
 
-
-
-
 #ifdef _DEBUG
 	#define ARC_LIB_NAME "../_build/ReleaseZipDebugZip/ZipArchive.lib"
 #else

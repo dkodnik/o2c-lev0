@@ -153,9 +153,11 @@ void CImageButton::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct )
 	
 	
 	//Drawing Bitmap
-	CImageList *p=GetImageList();
-	if(nImage)
-		p->DrawIndirect( pDC , nImage , CPoint( m_RectImage.left + bPushed , m_RectImage.top + bPushed ), CSize( WIDTH , HEIGHT ), CPoint( 0 , 0 ) , ILD_NORMAL );
+	//dlb+
+	//CImageList *p=GetImageList();
+	//if(nImage)
+	//	p->DrawIndirect( pDC , nImage , CPoint( m_RectImage.left + bPushed , m_RectImage.top + bPushed ), CSize( WIDTH , HEIGHT ), CPoint( 0 , 0 ) , ILD_NORMAL );
+	//dlb-
 /*
 	if( m_bLoaded ) 
 	{

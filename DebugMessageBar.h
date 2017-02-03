@@ -30,7 +30,7 @@ public:
 	void Refresh();
 
 	virtual void OnEvent(FL_NOTIFY &notify, HFROW hFRow, int iFColumn, int code);
-	int OnSetText(WPARAM wParam, LPARAM lParam);
+	LRESULT OnSetText(WPARAM wParam, LPARAM lParam);//dlb
 	afx_msg void OnDestroy();
 	DECLARE_MESSAGE_MAP()
 };

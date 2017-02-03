@@ -332,7 +332,7 @@ void CDebugMessageBar::OnDestroy()
 
 
 
-int CDebugMessageBar::OnSetText(WPARAM wParam, LPARAM lParam)
+LRESULT CDebugMessageBar::OnSetText(WPARAM wParam, LPARAM lParam)
 {
 	LPCTSTR lpszString=LPCTSTR(lParam);
 

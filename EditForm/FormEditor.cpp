@@ -328,7 +328,7 @@ BOOL CFormEditor::OnSetCursor(CWnd* pWnd, UINT nHitTest, UINT message)
 	return CBaseClass::OnSetCursor(pWnd, nHitTest, message);
 }
 
-void CFormEditor::EndSelectMode(WPARAM wParam, LPARAM lParam)
+LRESULT CFormEditor::EndSelectMode(WPARAM wParam, LPARAM lParam)
 {
 //	Invalidate();
 	if(m_FormSelector)
@@ -337,11 +337,13 @@ void CFormEditor::EndSelectMode(WPARAM wParam, LPARAM lParam)
 		delete m_FormSelector;
 		m_FormSelector=0;
 	}
+	return 1;
 
 }
-void CFormEditor::MessageShowProperty(WPARAM wParam, LPARAM lParam)
+LRESULT CFormEditor::MessageShowProperty(WPARAM wParam, LPARAM lParam)
 {
 	ShowProperty(int(wParam));
+	return 1;
 }
 
 
@@ -657,7 +659,7 @@ void CFormEditor::LoadData(int bCheckNew)
 			pControl->m_csValue="Закрыть";
 			pControl->m_csName="Закрыть";
 			pControl->SetFuncProperty("Нажатие","ЗакрытьФорму");
-			pControl->SetFuncProperty("Кнопка по умолчанию",1);
+			pControl->SetFuncProperty("Кнопка по умолчанию","Выполнить");//1);//dlb
 			
 			pControl->OnUpdate();
 			m_pDialog->ReloadWindows();

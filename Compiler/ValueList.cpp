@@ -524,7 +524,7 @@ CString CValueList::ToSeparatedString()
 			Str+=",";
 		if(aValue[i].Value.GetType()==TYPE_NUMBER)
 		{
-			Str+=aValue[i].Value;
+			Str+=(unsigned char)aValue[i].Value;//dlb
 		}
 		else
 		{

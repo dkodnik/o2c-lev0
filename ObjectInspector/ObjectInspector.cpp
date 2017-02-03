@@ -1094,7 +1094,7 @@ int CObjectInspector::CalculateScrollRange(CProperty *pProperty)
 	{
 		if (!(pProperty->m_pParent && !pProperty->m_pParent->m_bExpanded))
 				nItemsVisible++;
-		if (pProperty->m_Childs.size != 0)
+		if (pProperty->m_Childs.size() != 0)//dlb
 			for (vector<CProperty*>::iterator i = pProperty->m_Childs.begin(); i != pProperty->m_Childs.end(); i++)
 					CalculateScrollRange(*i);
 	}
@@ -1899,7 +1899,8 @@ void CObjectInspector::OnKeyDown(UINT nChar0, UINT nRepCnt, UINT nFlags)
 								int nLastUpper=0;
 								for(int i=1;i<csStr.GetLength();i++)
 								{
-									int nChar=csStr.GetAt(i);
+									//int nChar=csStr.GetAt(i);//dlb
+									CString nChar=csStr.GetAt(i);
 									if(nChar!=' '&&mUpper(nChar)==nChar&&nLastUpper+1<i)//большая буква
 									{
 										nLastUpper=i;

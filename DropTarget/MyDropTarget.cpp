@@ -17,7 +17,7 @@ static char THIS_FILE[]=__FILE__;
 // won't have the definition of IDropTargetHelper.  Uncomment the
 // following stuff to fix that.
 
-struct IDropTargetHelper : public IUnknown
+/*struct IDropTargetHelper : public IUnknown
 {
     // IUnknown methods
     STDMETHOD (QueryInterface)(THIS_ REFIID riid, void **ppv) PURE;
@@ -32,7 +32,7 @@ struct IDropTargetHelper : public IUnknown
     STDMETHOD (Drop)(THIS_ IDataObject* pDataObject, POINT* ppt,
 		DWORD dwEffect) PURE;
     STDMETHOD (Show)(THIS_ BOOL fShow) PURE;
-};
+};*///dlb
 
 // {4657278A-411B-11d2-839A-00C04FD918D0}
 extern "C" const GUID __declspec(selectany) CLSID_DragDropHelper = 

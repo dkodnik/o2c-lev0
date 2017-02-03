@@ -1,4 +1,4 @@
-//Microsoft Developer Studio generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -31,8 +31,8 @@ LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 245, 190
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_ABOUTBOX DIALOG  0, 0, 245, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "О программе"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -53,8 +53,8 @@ BEGIN
                     IDC_STATIC,35,28,203,8
 END
 
-IDD_CHOOSEVALUE DIALOG DISCARDABLE  0, 0, 271, 157
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_CHOOSEVALUE DIALOG  0, 0, 271, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Выберите значение"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -65,8 +65,8 @@ BEGIN
                     LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_CHOOSEVALUESMALL DIALOG DISCARDABLE  0, 0, 176, 57
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_CHOOSEVALUESMALL DIALOG  0, 0, 176, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Выберите значение"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -77,8 +77,8 @@ BEGIN
                     WS_VSCROLL | WS_TABSTOP
 END
 
-IDD_FORMOBJECT_FORM DIALOG DISCARDABLE  0, 0, 333, 139
-STYLE WS_CHILD
+IDD_FORMOBJECT_FORM DIALOG  0, 0, 333, 139
+STYLE DS_SETFONT | WS_CHILD
 FONT 8, "MS Sans Serif"
 BEGIN
     EDITTEXT        IDC_OBJECTNAME,7,17,169,15,ES_AUTOHSCROLL
@@ -95,20 +95,20 @@ BEGIN
     PUSHBUTTON      "Применить",IDC_USE,154,119,48,13
 END
 
-IDD_EDITDIALOG_FORM DIALOG DISCARDABLE  0, 0, 288, 174
-STYLE WS_CHILD | WS_VISIBLE
+IDD_EDITDIALOG_FORM DIALOG  0, 0, 288, 174
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
 FONT 8, "MS Sans Serif"
 BEGIN
 END
 
-IDD_FORMUNIT DIALOG DISCARDABLE  0, 0, 140, 62
-STYLE WS_CHILD
+IDD_FORMUNIT DIALOG  0, 0, 140, 62
+STYLE DS_SETFONT | WS_CHILD
 FONT 8, "MS Sans Serif"
 BEGIN
 END
 
-IDD_INPUTSTRING DIALOG DISCARDABLE  0, 0, 320, 53
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_INPUTSTRING DIALOG  0, 0, 320, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Введите строку"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -118,14 +118,16 @@ BEGIN
                     ES_WANTRETURN | WS_VSCROLL
 END
 
-IDD_DIALOGUNIT DIALOG DISCARDABLE  0, 0, 251, 146
-STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+IDD_DIALOGUNIT DIALOG  0, 0, 251, 146
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
 FONT 8, "MS Sans Serif"
 BEGIN
 END
 
 IDD_DIALOG_GOTOLINE DIALOGEX 0, 0, 156, 47
-STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
 CAPTION "Переход по номеру строки"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -138,7 +140,8 @@ BEGIN
 END
 
 IDD_PROCEDURE_LIST DIALOGEX 80, 50, 214, 162
-STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
 EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
 CAPTION "Процедуры и функции"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -156,15 +159,15 @@ BEGIN
     LTEXT           "Фильтр:",IDC_STATIC,162,115,41,11,NOT WS_VISIBLE
 END
 
-IDD_MYDATAEXCHANGE_DIALOG DIALOG DISCARDABLE  0, 0, 292, 34
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_MYDATAEXCHANGE_DIALOG DIALOG  0, 0, 292, 34
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "MyDataExchange2C"
 FONT 8, "MS Sans Serif"
 BEGIN
 END
 
-IDD_DIALOG_SECTIONS DIALOG DISCARDABLE  0, 0, 234, 156
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_DIALOG_SECTIONS DIALOG  0, 0, 234, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Секции"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -176,8 +179,8 @@ BEGIN
                     7,7,160,142
 END
 
-IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 186, 95
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_DIALOG2 DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Dialog"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -185,8 +188,8 @@ BEGIN
     PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
 END
 
-IDD_FIND_ALL_DIALOG DIALOG DISCARDABLE  0, 0, 298, 55
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_FIND_ALL_DIALOG DIALOG  0, 0, 298, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Поиск текста во всех модулях конфигурации"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -198,7 +201,8 @@ BEGIN
 END
 
 IDD_LAYERSELECT_FORM DIALOGEX 0, 0, 252, 134
-STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
 EXSTYLE WS_EX_TOOLWINDOW
 CAPTION "Слои"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -209,8 +213,8 @@ BEGIN
     PUSHBUTTON      "Помощь",IDHELP,195,45,50,14,NOT WS_VISIBLE
 END
 
-IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 321, 142
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_DIALOG4 DIALOG  0, 0, 321, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Dialog"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -222,8 +226,8 @@ BEGIN
                     7,74,21
 END
 
-IDD_INPUTDATE DIALOG DISCARDABLE  0, 0, 199, 49
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_INPUTDATE DIALOG  0, 0, 199, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Введите дату:"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -235,7 +239,7 @@ BEGIN
 END
 
 IDD_INPUTNUMERIC DIALOGEX 0, 0, 179, 57
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Введите число:"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
@@ -247,7 +251,8 @@ BEGIN
 END
 
 IDD_INPUTPERIOD DIALOGEX 0, 0, 336, 118
-STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
 CAPTION "Выбор периода"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 BEGIN
@@ -283,7 +288,8 @@ BEGIN
 END
 
 IDD_CHANGEORDER DIALOGEX 0, 0, 313, 185
-STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
 CAPTION "Изменение порядка обхода реквизитов"
 FONT 8, "MS Sans Serif", 0, 0, 0x1
@@ -294,8 +300,8 @@ BEGIN
                     4,25,302,134
 END
 
-IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 186, 95
-STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+IDD_DIALOG5 DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Dialog"
 FONT 8, "MS Sans Serif"
 BEGIN
@@ -310,18 +316,18 @@ END
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE DISCARDABLE 
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE DISCARDABLE 
+2 TEXTINCLUDE 
 BEGIN
     "#include ""afxres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE DISCARDABLE 
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
     "#define _AFX_NO_OLE_RESOURCES\r\n"
@@ -349,7 +355,7 @@ END
 // Menu
 //
 
-IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+IDR_MAINFRAME MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -441,7 +447,7 @@ BEGIN
     END
 END
 
-_IDR_ENTERPTYPE MENU PRELOAD DISCARDABLE 
+_IDR_ENTERPTYPE MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -558,7 +564,7 @@ BEGIN
     END
 END
 
-_IDR_FORM1C_TMPL MENU PRELOAD DISCARDABLE 
+_IDR_FORM1C_TMPL MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -602,7 +608,7 @@ BEGIN
     END
 END
 
-_IDR_TEXTTYPE MENU PRELOAD DISCARDABLE 
+_IDR_TEXTTYPE MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -664,7 +670,7 @@ BEGIN
     END
 END
 
-IDR_METADATATREE MENU DISCARDABLE 
+IDR_METADATATREE MENU 
 BEGIN
     POPUP "--------------"
     BEGIN
@@ -701,7 +707,7 @@ BEGIN
     END
 END
 
-IDR_SAMPLETYPE MENU PRELOAD DISCARDABLE 
+IDR_SAMPLETYPE MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -793,7 +799,7 @@ BEGIN
     END
 END
 
-_IDR_EDITDIALOG_TMPL MENU PRELOAD DISCARDABLE 
+_IDR_EDITDIALOG_TMPL MENU 
 BEGIN
     POPUP "&File"
     BEGIN
@@ -837,7 +843,7 @@ BEGIN
     END
 END
 
-IDR_ALL_EDIT_MENU MENU DISCARDABLE 
+IDR_ALL_EDIT_MENU MENU 
 BEGIN
     POPUP "Module - menu"
     BEGIN
@@ -885,7 +891,7 @@ BEGIN
     END
 END
 
-IDR_GRID_CONTEXT MENU PRELOAD DISCARDABLE 
+IDR_GRID_CONTEXT MENU 
 BEGIN
     POPUP "&Edit"
     BEGIN
@@ -913,7 +919,7 @@ BEGIN
     END
 END
 
-IDR_LAYERSELECT_TMPL MENU PRELOAD DISCARDABLE 
+IDR_LAYERSELECT_TMPL MENU 
 BEGIN
     POPUP "&File"
     BEGIN
@@ -957,7 +963,7 @@ BEGIN
     END
 END
 
-_IDR_SAMPLETYPE MENU PRELOAD DISCARDABLE 
+_IDR_SAMPLETYPE MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -1063,7 +1069,7 @@ BEGIN
     END
 END
 
-_IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+_IDR_MAINFRAME MENU 
 BEGIN
     POPUP "&Файл"
     BEGIN
@@ -1176,7 +1182,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO DISCARDABLE 
+GUIDELINES DESIGNINFO 
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -1334,53 +1340,54 @@ END
 // Bitmap
 //
 
-IDB_EDIT_SECTIONS       BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
-IDB_EDIT_SECTION_DEL    BITMAP  DISCARDABLE     "res\\edit_sec.bmp"
-IDB_EDIT_SECTION_ADD    BITMAP  DISCARDABLE     "res\\edit_pas.bmp"
-IDB_EDIT_PASTE          BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
-IDB_EDIT_LOCK           BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
-IDB_EDIT_HEADERS        BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
-IDB_EDIT_GRID           BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
-IDB_EDIT_FREEZE         BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
-IDB_EDIT_CUT            BITMAP  DISCARDABLE     "res\\edit_cut.bmp"
-IDB_EDIT_COPY           BITMAP  DISCARDABLE     "res\\edit_cop.bmp"
-IDB_JURNALDOC           BITMAP  DISCARDABLE     "res\\jurnaldo.bmp"
-IDB_SUBCONTO            BITMAP  DISCARDABLE     "res\\bmp00009.bmp"
-IDB_REPORTS             BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
-IDB_OBRABOTKA           BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
-IDB_FORMAT_COVERCELLS   BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
-IDB_CALCBTN             BITMAP  DISCARDABLE     "res\\calc.bmp"
-IDB_DROPCBTN            BITMAP  DISCARDABLE     "res\\calcbtn1.bmp"
-IDB_CHOSECBTN           BITMAP  DISCARDABLE     "res\\dropcbtn.bmp"
-IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap2.bmp"
-IDB_BITMAP2             BITMAP  DISCARDABLE     "bmp00001.bmp"
-IDB_BITMAP3             BITMAP  DISCARDABLE     "bitmap4.bmp"
-IDB_MENU_BUTTON         BITMAP  DISCARDABLE     "DocumentBar_src\\MenuButton.bmp"
-IDR_MODULE              BITMAP  MOVEABLE PURE   "res\\module.bmp"
-IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\module1.bmp"
-IDR_EDITBAR             BITMAP  DISCARDABLE     "res\\dyntoolbar.bmp"
-IDB_BITMAP4             BITMAP  DISCARDABLE     "Piktogramki.bmp"
-IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
-IDR_CONFIGTOOLBAR       BITMAP  MOVEABLE PURE   "res\\configto.bmp"
-IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
-IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
-IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
-IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
-IDR_LAYER               BITMAP  DISCARDABLE     "res\\toolbar2.bmp"
-IDB_EDIT_NEW            BITMAP  DISCARDABLE     "res\\bmp00010.bmp"
-IDB_EDIT                BITMAP  DISCARDABLE     "res\\edit_new.bmp"
-IDB_EDIT_MAKET          BITMAP  DISCARDABLE     "res\\bmp00011.bmp"
-IDB_EDIT_FORM           BITMAP  DISCARDABLE     "res\\edit_mak.bmp"
-IDB_EDIT_MODULE         BITMAP  DISCARDABLE     "res\\edit_for.bmp"
-IDB_EDIT_DOC            BITMAP  DISCARDABLE     "res\\bmp00012.bmp"
-IDR_CHANGEORDER         BITMAP  DISCARDABLE     "res\\bmp00013.bmp"
+IDB_EDIT_SECTIONS       BITMAP                  "res\\bmp00002.bmp"
+IDB_EDIT_SECTION_DEL    BITMAP                  "res\\edit_sec.bmp"
+IDB_EDIT_SECTION_ADD    BITMAP                  "res\\edit_pas.bmp"
+IDB_EDIT_PASTE          BITMAP                  "res\\bmp00001.bmp"
+IDB_EDIT_LOCK           BITMAP                  "res\\bmp00005.bmp"
+IDB_EDIT_HEADERS        BITMAP                  "res\\bmp00004.bmp"
+IDB_EDIT_GRID           BITMAP                  "res\\bmp00003.bmp"
+IDB_EDIT_FREEZE         BITMAP                  "res\\bmp00006.bmp"
+IDB_EDIT_CUT            BITMAP                  "res\\edit_cut.bmp"
+IDB_EDIT_COPY           BITMAP                  "res\\edit_cop.bmp"
+IDB_JURNALDOC           BITMAP                  "res\\jurnaldo.bmp"
+IDB_SUBCONTO            BITMAP                  "res\\bmp00009.bmp"
+IDB_REPORTS             BITMAP                  "res\\bmp00007.bmp"
+IDB_OBRABOTKA           BITMAP                  "res\\bmp00008.bmp"
+IDB_FORMAT_COVERCELLS   BITMAP                  "res\\bitmap1.bmp"
+IDB_CALCBTN             BITMAP                  "res\\calc.bmp"
+IDB_DROPCBTN            BITMAP                  "res\\calcbtn1.bmp"
+IDB_CHOSECBTN           BITMAP                  "res\\dropcbtn.bmp"
+IDB_BITMAP1             BITMAP                  "bitmap2.bmp"
+IDB_BITMAP2             BITMAP                  "bmp00001.bmp"
+IDB_BITMAP3             BITMAP                  "bitmap4.bmp"
+IDB_MENU_BUTTON         BITMAP                  "DocumentBar_src\\MenuButton.bmp"
+IDR_MODULE              BITMAP                  "res\\module.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\module1.bmp"
+IDR_EDITBAR             BITMAP                  "res\\dyntoolbar.bmp"
+IDB_BITMAP4             BITMAP                  "Piktogramki.bmp"
+IDB_BITMAP5             BITMAP                  "res\\bitmap5.bmp"
+IDR_CONFIGTOOLBAR       BITMAP                  "res\\configto.bmp"
+IDB_BITMAP6             BITMAP                  "res\\bitmap6.bmp"
+IDB_BITMAP7             BITMAP                  "res\\bitmap7.bmp"
+IDB_BITMAP8             BITMAP                  "res\\bitmap8.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDR_LAYER               BITMAP                  "res\\toolbar2.bmp"
+IDB_EDIT_NEW            BITMAP                  "res\\bmp00010.bmp"
+IDB_EDIT                BITMAP                  "res\\edit_new.bmp"
+IDB_EDIT_MAKET          BITMAP                  "res\\bmp00011.bmp"
+IDB_EDIT_FORM           BITMAP                  "res\\edit_mak.bmp"
+IDB_EDIT_MODULE         BITMAP                  "res\\edit_for.bmp"
+IDB_EDIT_DOC            BITMAP                  "res\\bmp00012.bmp"
+IDR_CHANGEORDER         BITMAP                  "res\\bmp00013.bmp"
+IDR_TOOLFORM            BITMAP                  "res\\toolform.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Toolbar
 //
 
-IDR_MODULE TOOLBAR DISCARDABLE  16, 15
+IDR_MODULE TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_EDIT_TOGGLE_BOOKMARK
     BUTTON      ID_EDIT_GOTO_NEXT_BOOKMARK
@@ -1416,7 +1423,7 @@ BEGIN
     BUTTON      ID_STOP_PROGRAM
 END
 
-IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+IDR_MAINFRAME TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_FILE_NEW
     BUTTON      ID_FILE_OPEN
@@ -1444,7 +1451,7 @@ BEGIN
     BUTTON      ID_VIEWMESSAGEWINDOW
 END
 
-IDR_EDITBAR TOOLBAR DISCARDABLE  17, 16
+IDR_EDITBAR TOOLBAR  17, 16
 BEGIN
     BUTTON      ID_DYNBUTTONLEFTALIGN
     BUTTON      ID_DYNBUTTONRIGHTALIGN
@@ -1482,7 +1489,7 @@ BEGIN
     BUTTON      ID_SEND_TO_BACK
 END
 
-IDR_CONFIGTOOLBAR TOOLBAR DISCARDABLE  16, 15
+IDR_CONFIGTOOLBAR TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_FILE_NEW
     BUTTON      ID_FILE_OPEN
@@ -1514,7 +1521,7 @@ BEGIN
     BUTTON      ID_PROPERTYBAR
 END
 
-IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+IDR_TOOLBAR1 TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_GRID_COVERED
     SEPARATOR
@@ -1527,7 +1534,7 @@ BEGIN
     BUTTON      ID_GRID_READONLY
 END
 
-IDR_LAYER TOOLBAR DISCARDABLE  16, 16
+IDR_LAYER TOOLBAR  16, 16
 BEGIN
     BUTTON      ID_NEW_LAYER
     BUTTON      ID_EDIT_LAYER
@@ -1537,12 +1544,12 @@ BEGIN
     BUTTON      ID_DOWN_LAYER
 END
 
-IDR_TOOLFORM TOOLBAR DISCARDABLE  16, 15
+IDR_TOOLFORM TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_BUTTON33102
 END
 
-IDR_CHANGEORDER TOOLBAR DISCARDABLE  16, 15
+IDR_CHANGEORDER TOOLBAR  16, 15
 BEGIN
     BUTTON      ID_UP
     BUTTON      ID_DOWN
@@ -1554,7 +1561,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+IDR_MAINFRAME ACCELERATORS 
 BEGIN
     "A",            ID_SELECT_ALL,          VIRTKEY, CONTROL, NOINVERT
     "B",            ID_FORMAT_STYLE_BOLD,   VIRTKEY, CONTROL, NOINVERT
@@ -1609,32 +1616,31 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_ICON_SHORTCUT       ICON    DISCARDABLE     "res\\icon1.ico"
-IDR_MAIN0               ICON    DISCARDABLE     "res\\idr_main.ico"
-IDR_FORM1C_TMPL         ICON    DISCARDABLE     "res\\Dialog.ico"
-IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Enterprise.ico"
-IDR_ENTERPTYPE          ICON    DISCARDABLE     "res\\EnterpriseDoc.ico"
-IDR_TEXTTYPE            ICON    DISCARDABLE     "res\\PADDOC.ICO"
-IDR_SAMPLETYPE          ICON    DISCARDABLE     "res\\idr_samp.ico"
-IDD_METAOBJECT          ICON    DISCARDABLE     "res\\ico00001.ico"
-IDR_FORMOBJECT_TMPL     ICON    DISCARDABLE     "mdi.ico"
-IDI_PROPERTY            ICON    DISCARDABLE     "res\\ico00002.ico"
-IDR_EDITDIALOG_TMPL     ICON    DISCARDABLE     "res\\idr_edit.ico"
-IDR_FORMEDITOR          ICON    DISCARDABLE     "res\\ico00003.ico"
-IDR_HELP                ICON    DISCARDABLE     "res\\idr_help.ico"
-IDR_METADATATREE        ICON    DISCARDABLE     "res\\idr_meta.ico"
-IDR_LAYERSELECT_TMPL    ICON    DISCARDABLE     "res\\idr_laye.ico"
-IDS_RTF_TYPE            ICON    DISCARDABLE     "res\\idr_ente.ico"
+IDI_ICON_SHORTCUT       ICON                    "res\\icon1.ico"
+IDR_MAIN0               ICON                    "res\\idr_main.ico"
+IDR_FORM1C_TMPL         ICON                    "res\\Dialog.ico"
+IDR_MAINFRAME           ICON                    "res\\Enterprise.ico"
+IDR_ENTERPTYPE          ICON                    "res\\EnterpriseDoc.ico"
+IDR_TEXTTYPE            ICON                    "res\\PADDOC.ICO"
+IDR_SAMPLETYPE          ICON                    "res\\idr_samp.ico"
+IDD_METAOBJECT          ICON                    "res\\ico00001.ico"
+IDR_FORMOBJECT_TMPL     ICON                    "mdi.ico"
+IDI_PROPERTY            ICON                    "res\\ico00002.ico"
+IDR_EDITDIALOG_TMPL     ICON                    "res\\idr_edit.ico"
+IDR_FORMEDITOR          ICON                    "res\\ico00003.ico"
+IDR_HELP                ICON                    "res\\idr_help.ico"
+IDR_METADATATREE        ICON                    "res\\idr_meta.ico"
+IDR_LAYERSELECT_TMPL    ICON                    "res\\idr_laye.ico"
+IDS_RTF_TYPE            ICON                    "res\\idr_ente.ico"
 
-#ifndef _MAC
 /////////////////////////////////////////////////////////////////////////////
 //
 // Version
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,0,0,4
- PRODUCTVERSION 0,0,3,0
+ FILEVERSION 0,0,0,5
+ PRODUCTVERSION 0,0,3,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -1649,18 +1655,13 @@ BEGIN
     BEGIN
         BLOCK "041904b0"
         BEGIN
-            VALUE "Comments", "\0"
-            VALUE "CompanyName", "\0"
-            VALUE "FileDescription", "Open2C ERP (MFC Application)\0"
-            VALUE "FileVersion", "0, 0, 0, 4\0"
-            VALUE "InternalName", "Enterprise\0"
-            VALUE "LegalCopyright", "OPEN2CERP.RU 2010, GPL2C.RU (gpl2c@pochta.ru) 2005-2006, VTOOLS.RU (info@vtools.ru) 2001-2004.\0"
-            VALUE "LegalTrademarks", "\0"
-            VALUE "OriginalFilename", "Enterprise.exe\0"
-            VALUE "PrivateBuild", "\0"
-            VALUE "ProductName", "Open2C ERP\0"
-            VALUE "ProductVersion", "0, 0, 3, 0\0"
-            VALUE "SpecialBuild", "\0"
+            VALUE "FileDescription", "Open2C ERP (MFC Application)"
+            VALUE "FileVersion", "0, 0, 0, 5"
+            VALUE "InternalName", "Enterprise"
+            VALUE "LegalCopyright", "OPEN2CERP.RU 2010, GPL2C.RU (gpl2c@pochta.ru) 2005-2006, VTOOLS.RU (info@vtools.ru) 2001-2004."
+            VALUE "OriginalFilename", "Enterprise.exe"
+            VALUE "ProductName", "Open2C ERP"
+            VALUE "ProductVersion", "0, 0, 3, 1"
         END
     END
     BLOCK "VarFileInfo"
@@ -1668,8 +1669,6 @@ BEGIN
         VALUE "Translation", 0x419, 1200
     END
 END
-
-#endif    // !_MAC
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -1731,34 +1730,34 @@ END
 // Cursor
 //
 
-IDC_POINTER_DRAG        CURSOR  DISCARDABLE     "arrow.cur"
-IDC_BUTTONCURSOR        CURSOR  DISCARDABLE     "res\\groupcur.cur"
-_EMPTY256               CURSOR  DISCARDABLE     "res\\empty256.cur"
-IDC_CHECKCURSOR         CURSOR  DISCARDABLE     "res\\_empty25.cur"
-IDC_COMBOCURSOR         CURSOR  DISCARDABLE     "res\\combocur.cur"
-IDC_DATECURSOR          CURSOR  DISCARDABLE     "res\\cur00001.cur"
-IDC_EDITCURSOR          CURSOR  DISCARDABLE     "res\\cur00002.cur"
-IDC_GROUPCURSOR         CURSOR  DISCARDABLE     "res\\cur00003.cur"
-IDC_LABELCURSOR         CURSOR  DISCARDABLE     "res\\_empty26.cur"
-IDC_GRIDCURSOR          CURSOR  DISCARDABLE     "res\\cur00004.cur"
-IDC_LISTCURSOR          CURSOR  DISCARDABLE     "res\\listcurs.cur"
-IDC_RADIOCURSOR         CURSOR  DISCARDABLE     "res\\cur00005.cur"
-IDC_TREECURSOR          CURSOR  DISCARDABLE     "res\\cur00006.cur"
-IDC_POINTER_DRAG2       CURSOR  DISCARDABLE     "res\\pointer_.cur"
-IDC_PROGRESS            CURSOR  DISCARDABLE     "res\\cur00007.cur"
-IDC_SLIDER              CURSOR  DISCARDABLE     "res\\cur00008.cur"
-IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
-IDC_CURSOR3             CURSOR  DISCARDABLE     "res\\cursor3.cur"
-IDC_FORMOBJECT          CURSOR  DISCARDABLE     "res\\cur00009.cur"
-IDC_POINTER_DRAG3       CURSOR  DISCARDABLE     "res\\cur00010.cur"
-IDC_BUTTON_TAB          CURSOR  DISCARDABLE     "res\\cur00011.cur"
+IDC_POINTER_DRAG        CURSOR                  "arrow.cur"
+IDC_BUTTONCURSOR        CURSOR                  "res\\groupcur.cur"
+_EMPTY256               CURSOR                  "res\\empty256.cur"
+IDC_CHECKCURSOR         CURSOR                  "res\\_empty25.cur"
+IDC_COMBOCURSOR         CURSOR                  "res\\combocur.cur"
+IDC_DATECURSOR          CURSOR                  "res\\cur00001.cur"
+IDC_EDITCURSOR          CURSOR                  "res\\cur00002.cur"
+IDC_GROUPCURSOR         CURSOR                  "res\\cur00003.cur"
+IDC_LABELCURSOR         CURSOR                  "res\\_empty26.cur"
+IDC_GRIDCURSOR          CURSOR                  "res\\cur00004.cur"
+IDC_LISTCURSOR          CURSOR                  "res\\listcurs.cur"
+IDC_RADIOCURSOR         CURSOR                  "res\\cur00005.cur"
+IDC_TREECURSOR          CURSOR                  "res\\cur00006.cur"
+IDC_POINTER_DRAG2       CURSOR                  "res\\pointer_.cur"
+IDC_PROGRESS            CURSOR                  "res\\cur00007.cur"
+IDC_SLIDER              CURSOR                  "res\\cur00008.cur"
+IDC_CURSOR2             CURSOR                  "res\\cursor2.cur"
+IDC_CURSOR3             CURSOR                  "res\\cursor3.cur"
+IDC_FORMOBJECT          CURSOR                  "res\\cur00009.cur"
+IDC_POINTER_DRAG3       CURSOR                  "res\\cur00010.cur"
+IDC_BUTTON_TAB          CURSOR                  "res\\cur00011.cur"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_APP_ABOUT            "Информация о программе и авторских правах\nAbout"
     ID_APP_EXIT             "Выйти из программы\nExit"
@@ -1766,7 +1765,7 @@ BEGIN
     ID_APP_EXIT2            "Quit the application; prompts to save documents\nExit"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
     ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
@@ -1778,7 +1777,7 @@ BEGIN
     ID_WINDOW_SPLIT2        "Split the active window into panes\nSplit"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_SEC_CALC_BUT5       "7"
     IDS_SEC_CALC_BUT6       "8"
@@ -1798,7 +1797,7 @@ BEGIN
     IDS_SEC_SBAR_TIP1       "Hide docked window"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_SEC_CALC_CHCK       "T"
     IDS_SEC_CALC_BUT1       "C"
@@ -1807,7 +1806,7 @@ BEGIN
     IDS_SEC_CALC_BUT4       "%"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_VIEW_TOOLBAR         "Показать или спрятать панель инструментов"
     ID_VIEW_STATUS_BAR      "Показать или спрятать строку состояний"
@@ -1815,12 +1814,12 @@ BEGIN
     ID_VIEW_STATUS_BAR2     "Show or hide the status bar\nToggle StatusBar"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_SEC_CALC_TEXTPT     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_CLEAR           "Очистить область"
     ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
@@ -1839,7 +1838,7 @@ BEGIN
     ID_EDIT_REDO2           "Redo the previously undone action\nRedo"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_FILE_NEW             "Создать новый документ\nНовый"
     ID_FILE_OPEN            "Открыть существующий документ\nОткрыть"
@@ -1859,7 +1858,7 @@ BEGIN
     ID_FILE_PRINT2          "Print the active document\nPrint"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_FILE_MRU_FILE1       "Открыть этот документ"
     ID_FILE_PRINT_PREVIEW2  "Display full pages\nPrint Preview"
@@ -1869,7 +1868,7 @@ BEGIN
     ID_FILE_MRU_FILE6       "Open this document"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDR_MAINFRAME           "2C:Предприятие 1.0"
     IDR_ENTERPTYPE          "\nТаблица\nТаблица\nФайлы таблиц 1С (*.mxl)\n.mxl\nMyEnterprise.Document\nMy Enterprise Document"
@@ -1880,7 +1879,7 @@ BEGIN
     IDR_TEXTTYPE            "\nТекст\nТекст\nТекст (*.txt)\n.txt\nТекст\nTEXT File Type\nTEXT\nText Files\n"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     AFX_IDS_APP_TITLE       "Новый"
     AFX_IDS_IDLEMESSAGE     "Для получения подсказки нажмите F1"
@@ -1888,7 +1887,7 @@ BEGIN
     AFX_IDS_IDLEMESSAGE2    "Ready"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDC_GRIDBAR_GRIDBOX     "Grid\nGrid"
     IDC_TABBAR_TABBOX       "Tab Window\nTab Window"
@@ -1899,7 +1898,7 @@ BEGIN
     IDR_FORM1C_TMPL         "\nФорма\nФорма\nФорма 2C (*.fd)\n.fd\nFD.2C-Document\n2C-Document"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_MRC_MDIFLOAT         "Перемещать в главном окне"
     ID_FORMAT_CELLS         "Свойства ячеек"
@@ -1914,19 +1913,19 @@ BEGIN
     ID_EDIT_FREEZE          "Сделать колонки неподвижными при скроллинге"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_ADD             "Вставить новую строку или колонку"
     ID_EDIT_DEL             "Удалить строку или колонку"
     ID_VIEW_GRID            "Показать/убрать сетку таблицы"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_MRC_STARTDOCKING    " "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_FILE_HEADERFOOTER    "Change the head- and footlines for printing\nHead-/Footlines"
     ID_VIEW_PROPERTIES      "Изменить свойства представления таблицы"
@@ -1937,7 +1936,7 @@ BEGIN
     ID_MRC_HIDE             "Спрятать"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_VIEW_READONLY        "Установить - сбросить режим ""Только просмотр"""
     ID_FORMAT_COVERCELLS    "Объединить ячейки"
@@ -1953,7 +1952,7 @@ BEGIN
     ID_VIEW_GRIDBAR         "Show or hide the grid bar\nToggle GridBar"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_VIEW_TABBAR          "Открыть список отчетов"
     ID_VIEW_DIALOGBAR       "Открыть список журналов документов"
@@ -1963,7 +1962,7 @@ BEGIN
     ID_FORMAT_LOOKUP        "Show the composed style for the current cell including all base styles.\nLookup Cell"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_GRID            "Показать сетку таблицы\nПоказать сетку таблицы"
     ID_REPORTS              "Открыть список отчетов"
@@ -1973,25 +1972,25 @@ BEGIN
     IDC_MAIN_MENU           "Показать или спрятать главное меню программы\nГлавное меню "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_LISTBOXBAR           "Показать или спрятать окно сообщений"
     IDR_MAIN_TOOLBAR        "Показать или спрятать общую панель инструментов программы\nОбщая панель инструментов"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_FORMAT_RESIZEROWS    "Изменить размер строк согласно их контексту"
     ID_FORMAT_RESIZECOLS    "Изменить размер колонок согласно их контексту"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
     ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "CAP"
@@ -2001,7 +2000,7 @@ BEGIN
     ID_INDICATOR_REC        "REC"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     AFX_IDS_SCSIZE          "Change the window size"
     AFX_IDS_SCMOVE          "Change the window position"
@@ -2012,19 +2011,19 @@ BEGIN
     AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     AFX_IDS_SCRESTORE       "Restore the window to normal size"
     AFX_IDS_SCTASKLIST      "Activate Task List"
     AFX_IDS_MDICHILD        "Activate this window"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_VIEWMESSAGEWINDOW    "Показать или спрятать окно сообщений\nОкно сообщений"
     ID_VIEWDEBUGMESSAGEWINDOW 
@@ -2032,7 +2031,7 @@ BEGIN
     ID_BUTTON_RUN           "Выполнить модуль (F5)\nВыполнить модуль"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_VIEW_STACK           "Показать или спрятать окно стека вызова\nСтек вызова процедур"
     ID_BUTTON_ENTERPRISE    "Перезапуск конфигурации"
@@ -2046,12 +2045,12 @@ BEGIN
     ID_PROPERTYBAR          "Показать или спрятать окно свойств"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_FORMAT_BLOCK         "Отформатировать выделенную часть текста (Alt + F8)\nОтформатировать текст"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_INDICATOR_COL   "========="
     ID_EDIT_INDICATOR_READ  "Read"
@@ -2059,14 +2058,14 @@ BEGIN
     ID_EDIT_INDICATOR_POSITION "============"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDR_FORMOBJECT_TMPL     "\nFormObject\nFormOb\n\n.for\nFormObject.Document\nFormOb Document"
     IDR_EDITDIALOG_TMPL     "\nEditDialog\nEditDi\nEditDi Files (*.edi)\n.edi\nEditDialog.Document\nEditDi Document"
     IDR_LAYERSELECT_TMPL    "\nLayerSelect\nLayerS\nLayerS Files (*.lay)\n.lay\nLayerSelect.Document\nLayerS Document"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDS_SEC_TBOX_WNDT       "Toolbox"
     IDS_SEC_TBOX_MENU1      "&Refresh"
@@ -2074,18 +2073,18 @@ BEGIN
     IDS_SEC_TBOX_TTIP       "Select Tool"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_DYNBUTTONEDIT        "Вставить реквизит диалога\nВставить реквизит диалога"
     ID_USE_GRID             "Привязывать диалоговые элементы к сетке\nПривязывать диалоговые элементы к сетке"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDR_HELP                "\nHelp 2C\nHelp 2C\nHelp 2C (*.chm)\n.chm\nchm.2C Document\n2C Document"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_CONFIG               "Запустить среду конфигурирования\nЗапустить среду конфигурирования"
     ID_ENTERPRISE           "Запустить среду исполнения\nЗапустить среду исполнения"
@@ -2100,7 +2099,7 @@ BEGIN
     ID_BUTTONPROC           "Процедуры и функции модуля (Alt + P)\nПроцедуры и функции"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_TOGGLE_BOOKMARK "Установить/снять закладку (Alt+F2)\nУстановить/снять закладку"
     ID_EDIT_GOTO_NEXT_BOOKMARK "Следующая закладка (F2)\nСледующая закладка"
@@ -2109,7 +2108,7 @@ BEGIN
     ID_EDIT_CLEAR_ALL_BOOKMARKS "Убрать все закладки\nУбрать закладки"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_BUTTONGOTOLINE       "Переход к строке (Alt + L)\nПереход к строке"
     ID_BUTTONFORMAT         "ID_FORMAT_BLOCK Отформатировать выделенную часть текста"
@@ -2120,7 +2119,7 @@ BEGIN
     ID_NEXT_DEBUG_OVER      "Шагнуть через F10\nШагнуть через"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_DYNBUTTONGROUP       "Вставить рамку группы\nВставить рамку"
     ID_DYNBUTTONLEFTALIGN   "Выровнять влево по активному элементу\nВыровнять влево"
@@ -2135,24 +2134,24 @@ BEGIN
     ID_DYNBUTTONRIGHTALIGN  "Выровнять вправо по активному элементу\nВыровнять вправо"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_DYNBUTTONLABEL       "Вставить текст\nВставить текст"
     ID_DYNBUTTONCOMBO       "Вставить поле со списком\nВставить поле со списком"
     ID_DYNBUTTONCHECK       "Вставить флажок\nВставить флажок"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_FIND_PREVIOUS   "Найти вверх\nНайти вверх"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     IDR_MODULE              "Показать или спрятать панель инструментов модуля\nПанель инструментов модуля"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_RUN_DEBUG            "Выполнить модуль (F5)\nВыполнить модуль"
     ID_PAUSE_DEBUG          "Приостановить выполнение среды исполнения\nПриостановить выполнение"
@@ -2162,18 +2161,18 @@ BEGIN
     ID_POST_SHOW            "ID_POST_SHOW"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
     ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_OLE_VERB_FIRST       "Activate embedded or linked object"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_EDIT_GOTO            "Перейти по ссылке"
     ID_CLOSE                "Закрыть активное окно"
@@ -2190,13 +2189,13 @@ BEGIN
     ID_ALL_FIND             "Поиск текста во всех модулях конифгурации"
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_BUTTON_TAB           "Вставить закладку\nВставить закладки для интерактивного выбора слоя пользователем"
     ID_ORDER_ELEMENTS       "Изменить порядок обхода элементов формы\nПорядок обхода элементов "
 END
 
-STRINGTABLE DISCARDABLE 
+STRINGTABLE 
 BEGIN
     ID_UP                   "Выше\n Переместить выше"
     ID_DOWN                 "Ниже\\Переместить ниже"
@@ -2222,25 +2221,25 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // Bitmap
 //
 
-IDB_CMN_DOWNARROW       BITMAP  DISCARDABLE     "RES\\DARROW.BMP"
-IDB_CMN_RIGHTARROW      BITMAP  DISCARDABLE     "RES\\RARROW.BMP"
-IDB_ELB_ADD             BITMAP  DISCARDABLE     "RES\\elb_add.bmp"
-IDB_ELB_DELETE          BITMAP  DISCARDABLE     "RES\\elb_del.bmp"
-IDB_ELB_DOWN            BITMAP  DISCARDABLE     "RES\\elb_down.bmp"
-IDB_ELB_UP              BITMAP  DISCARDABLE     "RES\\elb_up.bmp"
-IDB_NEXTMONTH           BITMAP  DISCARDABLE     "RES\\NEXTMONT.BMP"
-IDB_NEXTYEAR            BITMAP  DISCARDABLE     "RES\\NEXTYR.BMP"
-IDB_PREVMONTH           BITMAP  DISCARDABLE     "RES\\PREVMONT.BMP"
-IDB_PREVYEAR            BITMAP  DISCARDABLE     "RES\\PREVYR.BMP"
-IDB_SECCALCEQUALS       BITMAP  DISCARDABLE     "RES\\calceql.bmp"
-SEC_IDB_CHECK           BITMAP  DISCARDABLE     "RES\\check.bmp"
+IDB_CMN_DOWNARROW       BITMAP                  "RES\\DARROW.BMP"
+IDB_CMN_RIGHTARROW      BITMAP                  "RES\\RARROW.BMP"
+IDB_ELB_ADD             BITMAP                  "RES\\elb_add.bmp"
+IDB_ELB_DELETE          BITMAP                  "RES\\elb_del.bmp"
+IDB_ELB_DOWN            BITMAP                  "RES\\elb_down.bmp"
+IDB_ELB_UP              BITMAP                  "RES\\elb_up.bmp"
+IDB_NEXTMONTH           BITMAP                  "RES\\NEXTMONT.BMP"
+IDB_NEXTYEAR            BITMAP                  "RES\\NEXTYR.BMP"
+IDB_PREVMONTH           BITMAP                  "RES\\PREVMONT.BMP"
+IDB_PREVYEAR            BITMAP                  "RES\\PREVYR.BMP"
+IDB_SECCALCEQUALS       BITMAP                  "RES\\calceql.bmp"
+SEC_IDB_CHECK           BITMAP                  "RES\\check.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Accelerator
 //
 
-IDR_CNTR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+IDR_CNTR_INPLACE ACCELERATORS 
 BEGIN
     "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
     "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
@@ -2257,9 +2256,9 @@ END
 // Cursor
 //
 
-IDC_PAN_OVERVIEW        CURSOR  DISCARDABLE     "RES\\PAN_HAND.CUR"
-IDC_TOOLBAR_DRAGADD     CURSOR  DISCARDABLE     "RES\\dragadd.cur"
-IDC_TOOLBAR_HORZDRAG    CURSOR  DISCARDABLE     "RES\\horzdrag.cur"
+IDC_PAN_OVERVIEW        CURSOR                  "RES\\PAN_HAND.CUR"
+IDC_TOOLBAR_DRAGADD     CURSOR                  "RES\\dragadd.cur"
+IDC_TOOLBAR_HORZDRAG    CURSOR                  "RES\\horzdrag.cur"
 #endif    // English (U.S.) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -2278,7 +2277,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
 // Cursor
 //
 
-IDC_MULTILINEEDITCURSOR CURSOR  DISCARDABLE     "res\\multieditcurs.cur"
+IDC_MULTILINEEDITCURSOR CURSOR                  "res\\multieditcurs.cur"
 #endif    // English (U.K.) resources
 /////////////////////////////////////////////////////////////////////////////
 

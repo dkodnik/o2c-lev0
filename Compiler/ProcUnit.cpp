@@ -757,29 +757,29 @@ Start:
 			Variable1.sData=Variable2.sData+Variable3.sData;
 			break;
 		case OPER_SUB + TYPE_DELTA2:
-			Variable1.sData=Variable2.sData-Variable3.sData;
+			Variable1.sData=(char)(Variable2.sData-Variable3.sData);//dlb
 			break;
 		case OPER_LET + TYPE_DELTA2:
 			Variable1.sData=Variable2.sData;
 			break;
 
 		case OPER_EQ + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData==Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData==Variable3.sData);//dlb
 			break;
 		case OPER_NE + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData!=Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData!=Variable3.sData);
 			break;
 		case OPER_GT + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData>Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData>Variable3.sData);
 			break;
 		case OPER_LS + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData<Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData<Variable3.sData);
 			break;
 		case OPER_GE + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData>=Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData>=Variable3.sData);
 			break;
 		case OPER_LE + TYPE_DELTA2:
-			Variable1.sData=(Variable2.sData<=Variable3.sData);
+			Variable1.sData=(char)(Variable2.sData<=Variable3.sData);
 			break;
 		case OPER_SET_ARRAY + TYPE_DELTA2://установка значения массива
 			{

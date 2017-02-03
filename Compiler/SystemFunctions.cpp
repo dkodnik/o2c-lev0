@@ -1868,9 +1868,10 @@ CValue GetLexemArray(CValue **p)//ПолучитьМассивЛексем
 			lex.nType=IDENTIFIER;
 		vlex.SetAt("Тип",lex.nType);
 
-		if(lex.nType==DELIMETER)
-			vlex.SetAt("Значение",String(CString(lex.nData)));
-		else
+		if(lex.nType==DELIMETER) {
+			//vlex.SetAt("Значение",String(CString(lex.nData)));//dlb
+			vlex.SetAt("Значение",lex.nData);
+		} else
 			vlex.SetAt("Значение",lex.vData);
 
 //		vlex.SetAt("НомерСтроки",lex.nNumberLine+1);

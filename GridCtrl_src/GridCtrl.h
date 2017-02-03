@@ -283,7 +283,7 @@ public:
 
 
 	//MYMESSAGE MAP
-	afx_msg int OnWMEditCell(WPARAM wParam, LPARAM lParam);
+	afx_msg LRESULT OnWMEditCell(WPARAM wParam, LPARAM lParam);//dlb int
 
 ///////////////////////////////////////////////////////////////////////////////////
 // Attributes

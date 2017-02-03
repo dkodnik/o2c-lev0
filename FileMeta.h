@@ -27,7 +27,7 @@ public:
 
 	virtual BOOL Open(LPCTSTR lpszFileName, UINT nOpenFlags,
 		CFileException* pError = NULL);
-	virtual DWORD GetLength() const;
+	virtual DWORD GetLength();//dlb "virtual DWORD GetLength() const;"
 	virtual UINT Read(void* lpBuf, UINT nCount);
 	virtual void Write(const void* lpBuf, UINT nCount);
 	virtual void Abort();

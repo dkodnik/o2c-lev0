@@ -1,0 +1,71 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Test, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Users\posXX\Open2C-ERP\Plugins\WinSock\Debug\RSP000091.rsp" with contents
+[
+/OUT:"c:\2c\WinSockD.dll" /INCREMENTAL:NO /NOLOGO /DLL /DEBUG /PDB:".\Debug/WinSockD.pdb" /IMPLIB:".\Debug/WinSockD.lib" /MACHINE:X86 ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+".\Enterprise.lib"
+".\Debug\Buffer2.obj"
+".\Debug\CpuUsage.obj"
+".\Debug\IOCPServer.obj"
+".\Debug\Mapping.obj"
+".\Debug\MyClientSimple.obj"
+".\Debug\MyServerSimple.obj"
+".\Debug\OutToDebug.obj"
+".\Debug\SocketClass.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Test.obj"
+]
+Creating command line "link.exe @"c:\Users\posXX\Open2C-ERP\Plugins\WinSock\Debug\RSP000091.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Linking...
+LINK : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+   Creating library .\Debug/WinSockD.lib and object .\Debug/WinSockD.exp
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::LoadFromString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > &)" (?LoadFromString@CValue@@UAEXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::LoadFromString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > &)" (?LoadFromString@CValue@@UAEXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SaveToString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > &)" (?SaveToString@CValue@@UAEXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SaveToString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > &)" (?SaveToString@CValue@@UAEXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetAttributeName(int,int)" (?GetAttributeName@CValue@@UAE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@HH@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetAttributeName(int,int)" (?GetAttributeName@CValue@@UAE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@HH@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetMethodName(int,int)" (?GetMethodName@CValue@@UAE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@HH@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetMethodName(int,int)" (?GetMethodName@CValue@@UAE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@HH@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall CValue::FindAttribute(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?FindAttribute@CValue@@UAEHV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall CValue::FindAttribute(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?FindAttribute@CValue@@UAEHV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall CValue::FindMethod(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?FindMethod@CValue@@UAEHV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall CValue::FindMethod(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?FindMethod@CValue@@UAEHV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetString(void)const " (?GetString@CValue@@UBE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@XZ)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > __thiscall CValue::GetString(void)const " (?GetString@CValue@@UBE?AV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@XZ)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetDate(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetDate@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetDate(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetDate@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetNumber(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetNumber@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetNumber(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetNumber@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetString@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::SetString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (?SetString@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z)
+MyClientSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::Init(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >,class CValue)" (?Init@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@V1@@Z)
+MyServerSimple.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall CValue::Init(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >,class CValue)" (?Init@CValue@@UAEXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@V1@@Z)
+MyClientSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl SetStatus(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (__imp_?SetStatus@@YAXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z) referenced in function "public: int __thiscall CMyClientSimple::Connect(class CValue &,class CValue * *)" (?Connect@CMyClientSimple@@QAEHAAVCValue@@PAPAV2@@Z)
+MyClientSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static struct CRuntimeClass * __stdcall CValue::GetThisClass(void)" (__imp_?GetThisClass@CValue@@SGPAUCRuntimeClass@@XZ) referenced in function _$E4
+MyServerSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static struct CRuntimeClass * __stdcall CValue::GetThisClass(void)" (__imp_?GetThisClass@CValue@@SGPAUCRuntimeClass@@XZ) referenced in function "unsigned int __stdcall ATL::_AtlGetThreadACPFake(void)" (?_AtlGetThreadACPFake@ATL@@YGIXZ)
+MyServerSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class CValue __cdecl CValue::CallFunction(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >,...)" (__imp_?CallFunction@CValue@@QAA?AV1@V?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@ZZ) referenced in function "void __cdecl CloseSocket(struct CContextData &,class CValue &,class CValue &)" (?CloseSocket@@YAXAAUCContextData@@AAVCValue@@1@Z)
+MyServerSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual void __thiscall CValue::LoadFromString(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > > &)" (__imp_?LoadFromString@CValue@@UAEXAAV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z) referenced in function __catch$?ClientThread@@YAIPAX@Z$0
+MyServerSimple.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) class CValue __cdecl String(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (__imp_?String@@YA?AVCValue@@V?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z) referenced in function "unsigned int __cdecl ClientThread(void *)" (?ClientThread@@YAIPAX@Z)
+Test.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl RegisterObject(struct CRuntimeClass *,class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (__imp_?RegisterObject@@YAXPAUCRuntimeClass@@V?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z) referenced in function _InitPlugin_D
+Test.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl UnRegisterObject(class ATL::CStringT<char,class StrTraitMFC_DLL<char,class ATL::ChTraitsCRT<char> > >)" (__imp_?UnRegisterObject@@YAXV?$CStringT@DV?$StrTraitMFC_DLL@DV?$ChTraitsCRT@D@ATL@@@@@ATL@@@Z) referenced in function _DonePlugin_D
+c:\2c\WinSockD.dll : fatal error LNK1120: 18 unresolved externals
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Users\posXX\Open2C-ERP\Plugins\WinSock\Debug\BuildLog.htm"
+Test - 31 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

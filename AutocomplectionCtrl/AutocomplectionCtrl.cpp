@@ -964,13 +964,13 @@ BOOL CAutocomplectionCtrl::IsKeyword(const CString& str)
 void CAutocomplectionCtrl::CaseSensitive(BOOL casesens)
 {
 	/* I use 2 function pointers */
-
-	if (casesens)
+//dlbs
+	/*if (casesens)
 	{
 		compare = strcmp;
 		comparen = strncmp;
 	}
-	else
+	else*/
 	{
 		compare = stricmp;
 		comparen = strnicmp;

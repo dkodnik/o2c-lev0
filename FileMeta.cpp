@@ -37,7 +37,7 @@ BOOL CFileMeta::Open(LPCTSTR lpszFileName, UINT nOpenFlags,CFileException* pErro
 		return CFile::Open(lpszFileName,nOpenFlags,pError);
 	}
 }
-DWORD CFileMeta::GetLength() const
+DWORD CFileMeta::GetLength() //const
 {
 	if(IsMetaFile())
 	{

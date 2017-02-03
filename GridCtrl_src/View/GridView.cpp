@@ -585,7 +585,7 @@ BOOL CGridView::PreTranslateMessage(MSG* pMsg)
 
 #define SetVal(x) if(pOrigCell->x!=pCel->x){pItemCel->x=pCel->x;}
 
-int CGridView::OnPropertyUpdateMessage(WPARAM wParam, LPARAM lParam)
+LRESULT CGridView::OnPropertyUpdateMessage(WPARAM wParam, LPARAM lParam)
 {
 	if(m_pGridCtrl)
 	{

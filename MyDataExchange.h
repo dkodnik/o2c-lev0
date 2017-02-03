@@ -82,7 +82,7 @@ protected:
 	// Generated message map functions
 	//{{AFX_MSG(CMyDataExchange)
 	afx_msg BOOL OnCopyData(CWnd* pWnd, COPYDATASTRUCT* pCopyDataStruct);
-	afx_msg int OnMessageFrom2C(WPARAM, LPARAM);
+	afx_msg LRESULT OnMessageFrom2C(WPARAM, LPARAM);
 	virtual BOOL OnInitDialog();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()

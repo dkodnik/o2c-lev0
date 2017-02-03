@@ -593,8 +593,12 @@ BOOL COXTabViewContainer::InsertPage(const int nIndex,
 	ASSERT(pWnd->m_hWnd==NULL);       // not yet created
 
 	DWORD dwStyle=AFX_WS_DEFAULT_VIEW;
+	// other system information:
+	// TRUE if Windows 4.0
+	#if (_MSC_VER < 1300)
 	if(afxData.bWin4)
 		dwStyle&=~WS_BORDER;
+	#endif
 
 	DWORD dwID=GetUniqueId();
 

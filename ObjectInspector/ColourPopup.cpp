@@ -901,9 +901,11 @@ void CColourPopup::OnKillFocus(CWnd* pNewWnd)
 }
 
 // KillFocus problem fix suggested by Paul Wilkerson.
-void CColourPopup::OnActivateApp(BOOL bActive, HTASK hTask) 
+//void CColourPopup::OnActivateApp(BOOL bActive, HTASK hTask)//dlb 
+void CColourPopup::OnActivateApp(BOOL bActive, DWORD dWord) 
 {
-	CWnd::OnActivateApp(bActive, hTask);
+	//CWnd::OnActivateApp(bActive, (DWORD)hTask);//dlb
+	CWnd::OnActivateApp(bActive, dWord);
 
 	// If Deactivating App, cancel this selection
 	if (!bActive)

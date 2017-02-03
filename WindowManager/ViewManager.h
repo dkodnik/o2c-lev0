@@ -85,7 +85,7 @@ protected:
 	afx_msg void OnWindowPosChanging(WINDOWPOS FAR* lpwndpos);
 	afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 	//}}AFX_MSG
-    BOOL OnViewManagerToolTip(NMHDR* pTTTStruct, LRESULT* pResult);
+    void OnViewManagerToolTip(NMHDR* pTTTStruct, LRESULT* pResult);//dlb (BOOL->void)
 	DECLARE_MESSAGE_MAP()
 };
 
